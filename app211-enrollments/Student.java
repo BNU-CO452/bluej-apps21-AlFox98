@@ -33,7 +33,7 @@ public class Student
         return name;
     }
 
-     /**
+    /**
      * Return the student ID of this student.
      */
     public int getID()
@@ -41,6 +41,9 @@ public class Student
         return id;
     }
 
+    /**
+     * Allows a student to enrol in a course.
+     */
     public void enrol(Course course)
     {
         this.course = course;

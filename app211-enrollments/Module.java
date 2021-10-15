@@ -7,9 +7,11 @@
  */
 public class Module
 {
-    // instance variables - replace the example below with your own
+    // the module code
     private String code;
+    // the module title
     private String title;
+    // the amount of credits a module awards
     public int credit;
    
 
@@ -25,10 +27,7 @@ public class Module
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * A single line method used to return the value of a variable
      */
     public String getCode()
     {
@@ -51,8 +50,8 @@ public class Module
     }
     
     /**
-     * Print the details of the course, the list
-     * of students enrolled and the module
+     * Print the details of the module, this includes the code,
+     * the title and the credit
      */
     public void print()
     {

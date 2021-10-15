@@ -5,6 +5,7 @@ import java.util.*;
  * at BNU together with a list of student who are enrolled
  *
  * @author Derek Peacock
+ * @modified by Alastair Fox
  * @version 1.0 14/07/2021
  */
 public class Course
@@ -18,7 +19,7 @@ public class Course
     
     /**
      * Create a Course with a maximum number of enrolments. 
-     * All other details are set to unkown values.
+     * All other details are set to unknown values.
      */
     public Course(String code, String title)
     {
@@ -28,8 +29,8 @@ public class Course
 
     
     /**
-     * Print the details of the course, the list
-     * of students enrolled and the module
+     * Print the details of the course, including the
+     * course code, the title and modules
      */
     public void print()
     {
@@ -38,7 +39,7 @@ public class Course
         System.out.println(" Course Code: " + code + " Course Title: " + title);
         System.out.println();
         
-        /**module.print();*/
+        module.print();
     }
     
     /**
