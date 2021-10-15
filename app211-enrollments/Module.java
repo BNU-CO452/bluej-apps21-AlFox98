@@ -10,7 +10,7 @@ public class Module
     // instance variables - replace the example below with your own
     private String code;
     private String title;
-    private int credit;
+    public int credit;
    
 
     /**
@@ -58,7 +58,8 @@ public class Module
     {
         //printHeading();
         
-        System.out.println(" Module Code: " + code + ": " + title);
+        System.out.println(" Module Code: " + code + " Module Title: " + title +
+                           " Credit: " + credit);
         System.out.println();
     }
 }
