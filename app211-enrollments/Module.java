@@ -1,6 +1,7 @@
-
 /**
- * A class that contains information regarding course modules.
+ * This class contains information regarding course modules.
+ * This includes the module code, title and the amount of credit
+ * awarded by the module. This class is to be used by the course class.
  *
  * @author Alastair Fox
  * @version 08/10/2021
@@ -13,10 +14,9 @@ public class Module
     private String title;
     // the amount of credits a module awards
     public int credit;
-   
-
+    
     /**
-     * Constructor for objects of class Module
+     * Constructor used to create a module by assigning a code and a title.
      */
     public Module(String code, String title)
     {
