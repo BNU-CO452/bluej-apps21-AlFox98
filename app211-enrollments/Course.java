@@ -2,7 +2,7 @@ import java.util.*;
 
 /**
  * This class contains information about an undergraduate course
- * at BNU together with a list of student who are enrolled
+ * at BNU together with a list of students who are enrolled
  *
  * @author Derek Peacock
  * @modified by Alastair Fox
@@ -27,7 +27,6 @@ public class Course
         this.title = title;
     }
 
-    
     /**
      * Print the details of the course, including the
      * course code, the title and modules
