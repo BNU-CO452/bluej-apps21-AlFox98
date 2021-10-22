@@ -1,0 +1,30 @@
+ Student alastair = new Student();
+Course computing = new Course();
+alastair.enrol(computing);
+alastair.printCourse();
+ Student ID: 21920523, Alastair Fox 
+
+ Course BT1CTG1: BSc (Hons) Computing
+Module co452 = new Module("CO452", "Programming Concepts");
+computing.addModule(co452);
+ModuleMark alastairCo452Mark = new ModuleMark(co452);
+alastairCo452Mark.setMark(100);
+alastair.addMark(alastairCo452Mark);
+alastair.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by Alastair Fox  21920523
+ ------------------------------------
+ Student ID: 21920523, Alastair Fox 
+
+ Course BT1CTG1: BSc (Hons) Computing
+
+ CO452: 	Programming Concepts
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: 	Programming Concepts
+
+ No Final Course Grade Yet!

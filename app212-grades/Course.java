@@ -19,7 +19,7 @@ public class Course
      
     public Course()
     {
-        this("G400", "BSc Computing");
+        this("BT1CTG1", "BSc (Hons) Computing");
     }
     
     /**
@@ -43,7 +43,7 @@ public class Course
      */
     public void createModules()
     {
-
+        
     }
     
     public void addModule(Module module)
@@ -89,6 +89,9 @@ public class Course
      */
     public void printModules()
     {
-        System.out.println();
+        for (Module module : modules)
+        {
+            module.print();
+        }
     }
 }
