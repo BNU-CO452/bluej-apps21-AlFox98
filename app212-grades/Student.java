@@ -117,7 +117,11 @@ public class Student
     
     public void printModules()
     {
-        course.printModules();
+        for(ModuleMark moduleMark: marks)
+        {
+            moduleMark.print();
+            System.out.println(course.convertToGrade(moduleMark.getValue()));
+        }
     }
     
     public void printTranscript()

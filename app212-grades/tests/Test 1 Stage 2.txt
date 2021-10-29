@@ -1,0 +1,34 @@
+ Course computing = new Course();
+Student alastair = new Student();
+alastair.enrol(computing);
+alastair.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by Alastair Fox  21920523
+ ------------------------------------
+ Student ID: 21920523, Alastair Fox 
+
+ Course BT1CTG1: BSc (Hons) Computing
+Course Modules
+--------------
+
+CO452 Programming Concepts
+CO450 Computer Architectures
+CO454 Digital Technologies and Professional Practice
+CO456 Web Development
+
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: 	Programming Concepts	  15	70A
+
+ CO450: 	Computer Architectures	  15	60B
+
+ CO454: 	Digital Technologies and Professional Practice	  15	50C
+
+ CO456: 	Web Development	  15	40D
+
+
+ Final Course Grade = C

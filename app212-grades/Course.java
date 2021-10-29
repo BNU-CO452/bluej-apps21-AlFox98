@@ -93,7 +93,7 @@ public class Course
         {
             return Grades.F;
         }
-        return Grades.NS;
+        else return Grades.NS;
     }
     
     /**
@@ -102,7 +102,18 @@ public class Course
      */
     public Grades calculateGrade(ArrayList<ModuleMark> marks)
     {
-        return Grades.NS;
+        int total = 0;
+        int finalMark = 0;
+        
+        for(ModuleMark mark : marks)
+        {
+            total = total + mark.getValue();
+        }
+        
+        finalMark = total / MAXN_MODULES;
+        finalGrade = convertToGrade(finalMark);
+        
+        return finalGrade;
     }
     
     /**
@@ -123,14 +134,14 @@ public class Course
      */
     public void printModules()
     {
-        System.out.println("/tCourse Modules");
-        System.out.println("/t--------------");     
+        System.out.println("Course Modules");
+        System.out.println("--------------");     
         System.out.println();
         
         for (Module module : modules)
         {
-            System.out.print("/t" + module.getCode());
-            System.out.println("/t" + module.getTitle());
+            System.out.print(module.getCode());
+            System.out.println(" " + module.getTitle());
         }
     }
 }
