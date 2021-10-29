@@ -16,7 +16,9 @@ public class Course
     private String title;
     
     private Grades finalGrade;
-     
+    /**
+     * Constuctor that creates a course object and sets the code and title
+     */
     public Course()
     {
         this("BT1CTG1", "BSc (Hons) Computing");
@@ -43,7 +45,17 @@ public class Course
      */
     public void createModules()
     {
+        Module moduleCO452 = new Module("CO452", "Programming Concepts");
+        addModule(moduleCO452);
         
+        Module moduleCO450 = new Module("CO450", "Computer Architectures");
+        addModule(moduleCO450);
+        
+        Module moduleCO454 = new Module("CO454", "Digital Technologies and Professional Practice");
+        addModule(moduleCO454);
+        
+        Module moduleCO456 = new Module("CO456", "Web Development");
+        addModule(moduleCO456);
     }
     
     public void addModule(Module module)
@@ -59,6 +71,28 @@ public class Course
      */
     public Grades convertToGrade(int mark)
     {
+        Grades grade = Grades.NS;
+        
+        if(mark > Grades.B.getValue())
+        {
+            return Grades.A;
+        }
+        else if(mark > Grades.C.getValue())
+        {
+            return Grades.B;
+        }
+        else if(mark > Grades.D.getValue())
+        {
+            return Grades.C;
+        }
+        else if(mark > Grades.F.getValue())
+        {
+            return Grades.D;
+        }
+        else if(mark > Grades.NS.getValue())
+        {
+            return Grades.F;
+        }
         return Grades.NS;
     }
     
@@ -89,9 +123,14 @@ public class Course
      */
     public void printModules()
     {
+        System.out.println("/tCourse Modules");
+        System.out.println("/t--------------");     
+        System.out.println();
+        
         for (Module module : modules)
         {
-            module.print();
+            System.out.print("/t" + module.getCode());
+            System.out.println("/t" + module.getTitle());
         }
     }
 }
