@@ -1,0 +1,22 @@
+Product mustang = new Product(101, "Ford Mustang");
+mustang.print();
+ ID 101: Ford Mustang stock level: 0
+mustang.decreaseQuantity(1);
+mustang.print();
+ ID 101: Ford Mustang stock level: 0
+mustang.increaseQuantity(4);
+mustang.print();
+ ID 101: Ford Mustang stock level: 4
+mustang.decreaseQuantity(2);
+Product fiesta = new Product(102, "Ford Fiesta");
+StockList carsStockList1 = new StockList();
+carsStockList1.add(mustang);
+carsStockList1.add(fiesta);
+carsStockList1.print();
+
+ Peacock's Stock List
+ ====================
+
+ ID 101: Ford Mustang stock level: 2
+ ID 102: Ford Fiesta stock level: 0
+
