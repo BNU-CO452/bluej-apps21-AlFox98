@@ -1,4 +1,4 @@
-Product mustang = new Product(101, "Ford Mustang");
+ Product mustang = new Product(101, "Ford Mustang");
 mustang.print();
  ID 101: Ford Mustang stock level: 0
 mustang.decreaseQuantity(1);
@@ -8,7 +8,11 @@ mustang.increaseQuantity(4);
 mustang.print();
  ID 101: Ford Mustang stock level: 4
 mustang.decreaseQuantity(2);
+mustang.print();
+ ID 101: Ford Mustang stock level: 2
 Product fiesta = new Product(102, "Ford Fiesta");
+fiesta.print();
+ ID 102: Ford Fiesta stock level: 0
 StockList carsStockList1 = new StockList();
 carsStockList1.add(mustang);
 carsStockList1.add(fiesta);
