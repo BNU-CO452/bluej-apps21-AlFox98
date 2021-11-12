@@ -56,7 +56,7 @@ public class StockDemo
         stock.print();        
 
         sellProducts();
-        stock.print();        
+        stock.print();
     }
     
     private void buyProducts()

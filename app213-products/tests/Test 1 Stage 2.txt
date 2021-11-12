@@ -1,0 +1,85 @@
+ StockList cars = new StockList();
+StockDemo carsDemo = new StockDemo(cars);
+carsDemo.runDemo();
+
+ Al's Stock List
+ ====================
+
+ ID 101: McLaren 720S stock level: 0
+ ID 102: Ferrari SF90 Stradale stock level: 0
+ ID 103: Ferrari F8 Tributo stock level: 0
+ ID 104: Lamborhini Huracan Evo stock level: 0
+ ID 105: Ford GT stock level: 0
+ ID 106: Lamborghini Aventador SVJ stock level: 0
+ ID 107: Noble M600 stock level: 0
+ ID 108: Aston Martin Vanquish stock level: 0
+ ID 109: BMW M1 stock level: 0
+ ID 110: McLaren F1 stock level: 0
+
+Bought 19  ID 101: McLaren 720S stock level: 19
+Bought 11  ID 102: Ferrari SF90 Stradale stock level: 11
+Bought 18  ID 103: Ferrari F8 Tributo stock level: 18
+Bought 3  ID 104: Lamborhini Huracan Evo stock level: 3
+Bought 7  ID 105: Ford GT stock level: 7
+Bought 17  ID 106: Lamborghini Aventador SVJ stock level: 17
+Bought 17  ID 107: Noble M600 stock level: 17
+Bought 12  ID 108: Aston Martin Vanquish stock level: 12
+Bought 18  ID 109: BMW M1 stock level: 18
+Bought 2  ID 110: McLaren F1 stock level: 2
+
+ Al's Stock List
+ ====================
+
+ ID 101: McLaren 720S stock level: 19
+ ID 102: Ferrari SF90 Stradale stock level: 11
+ ID 103: Ferrari F8 Tributo stock level: 18
+ ID 104: Lamborhini Huracan Evo stock level: 3
+ ID 105: Ford GT stock level: 7
+ ID 106: Lamborghini Aventador SVJ stock level: 17
+ ID 107: Noble M600 stock level: 17
+ ID 108: Aston Martin Vanquish stock level: 12
+ ID 109: BMW M1 stock level: 18
+ ID 110: McLaren F1 stock level: 2
+
+Sold 12 of  ID 101: McLaren 720S stock level: 7
+Not enough  ID 102: Ferrari SF90 Stradale stock level: 11 stock to sell.
+Sold 7 of  ID 103: Ferrari F8 Tributo stock level: 11
+Sold 2 of  ID 104: Lamborhini Huracan Evo stock level: 1
+Sold 6 of  ID 105: Ford GT stock level: 1
+Sold 2 of  ID 106: Lamborghini Aventador SVJ stock level: 15
+Sold 16 of  ID 107: Noble M600 stock level: 1
+Sold 12 of  ID 108: Aston Martin Vanquish stock level: 0
+Sold 9 of  ID 109: BMW M1 stock level: 9
+Not enough  ID 110: McLaren F1 stock level: 2 stock to sell.
+
+ Al's Stock List
+ ====================
+
+ ID 101: McLaren 720S stock level: 7
+ ID 102: Ferrari SF90 Stradale stock level: 11
+ ID 103: Ferrari F8 Tributo stock level: 11
+ ID 104: Lamborhini Huracan Evo stock level: 1
+ ID 105: Ford GT stock level: 1
+ ID 106: Lamborghini Aventador SVJ stock level: 15
+ ID 107: Noble M600 stock level: 1
+ ID 108: Aston Martin Vanquish stock level: 0
+ ID 109: BMW M1 stock level: 9
+ ID 110: McLaren F1 stock level: 2
+
+cars.removeProduct();
+Removed entry with ID: 110 from the stock list.
+cars.print();
+
+ Al's Stock List
+ ====================
+
+ ID 101: McLaren 720S stock level: 7
+ ID 102: Ferrari SF90 Stradale stock level: 11
+ ID 103: Ferrari F8 Tributo stock level: 11
+ ID 104: Lamborhini Huracan Evo stock level: 1
+ ID 105: Ford GT stock level: 1
+ ID 106: Lamborghini Aventador SVJ stock level: 15
+ ID 107: Noble M600 stock level: 1
+ ID 108: Aston Martin Vanquish stock level: 0
+ ID 109: BMW M1 stock level: 9
+

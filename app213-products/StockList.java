@@ -159,8 +159,11 @@ public class StockList
         System.out.println();
     }
     
+    //Constructor used to remove a random product from the stock list
     public void removeProduct()
     {
-        stock.remove(1);
+        int removed = generator.nextInt(10);
+        stock.remove(removed);
+        System.out.println("Removed entry with ID: " + (removed+101) + " from the stock list.");
     }
 }
