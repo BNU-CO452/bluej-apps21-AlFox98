@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Manage the stock in a business.
@@ -11,6 +12,8 @@ public class StockList
 {
     // A list of the products.
     private ArrayList<Product> stock;
+    
+    private Random generator = new Random();
 
     /**
      * Initialise the stock manager.
@@ -82,22 +85,24 @@ public class StockList
     public void sellProduct(int productID)
     {
         Product product = findProduct(productID);
-        
+        int soldQuantity = generator.nextInt(20);
         if(product != null) 
         {
-            if(product.getQuantity() > 0)
+            if(product.getQuantity() > 0 && product.getQuantity() >= soldQuantity)
             {
-                product.decreaseQuantity(1);
-                
+                product.decreaseQuantity(soldQuantity);
+                System.out.println("Sold " + soldQuantity + " of " + product);
                 // printout message
             }
             else
             {
+                System.out.println("Not enough " + product + " stock to sell.");
                 // printout message
             }
         }
         else
         {
+            System.out.println("Couldn't find product: " + product);
             // printout message
         }
     }    
@@ -152,5 +157,10 @@ public class StockList
         System.out.println(" Al's Stock List");
         System.out.println(" ====================");
         System.out.println();
+    }
+    
+    public void removeProduct()
+    {
+        stock.remove(1);
     }
 }

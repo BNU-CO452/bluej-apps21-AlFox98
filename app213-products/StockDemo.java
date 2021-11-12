@@ -80,5 +80,18 @@ public class StockDemo
 
     private void sellProducts()
     {
+        Product product;
+        for(int id = 101; id <= 110; id++)
+        {
+            product = stock.findProduct(id);
+            if(product == null)
+            {
+                System.out.println("Product " + id + " not found");
+            }
+            else
+            {
+                stock.sellProduct(id);
+            }
+        }
     }    
 }
