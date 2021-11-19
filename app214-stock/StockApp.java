@@ -1,4 +1,3 @@
-
 /**
  * This app provides a user interface to the
  * stock manager so that users can add, edit,
@@ -57,6 +56,10 @@ public class StockApp
         {
             addProduct();
         }
+        else if(choice.equals("remove"))
+        {
+            remove();
+        }
         
         return false;
     }
@@ -93,9 +96,41 @@ public class StockApp
         int id = reader.getInt("Please enter a product ID > ");
         String name = reader.getString("Please enter the product name > ");
         
-        Product product = new Product(id, name);
+        Product checkProduct = stock.findProduct(id);
         
-        stock.add(product);
+        if(checkProduct != null) 
+        {
+            System.out.println("ERROR: Item already exists");
+        }
+        else
+        {
+            Product product = new Product(id, name);
+            stock.add(product);
+            System.out.println("Item successfully added");
+        }
+        
+        stock.print();
+    }
+    
+    private void remove()
+    {
+        System.out.println("Remove a product");
+        System.out.println();
+        
+        int id = reader.getInt("Please enter a product ID to remove > ");
+        
+        String name = reader.getString("Please enter a product name to remove > ");
+        
+        Product product = stock.findProduct(id);
+        
+        if(product != null) 
+        {
+            stock.removeProduct(id);
+        }
+        else
+        {
+            System.out.println("ERROR: Couldn't find item");
+        }
         stock.print();
     }
 }

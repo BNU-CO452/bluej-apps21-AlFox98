@@ -1,0 +1,192 @@
+ Program.main({ });
+********************************
+  App21-04: Stock Application 
+      by Student Name
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > print
+
+ Al's Stock List
+ ====================
+
+ ID 101: McLaren 720S stock level: 0
+ ID 102: Ferrari SF90 Stradale stock level: 0
+ ID 103: Ferrari F8 Tributo stock level: 0
+ ID 104: Lamborhini Huracan Evo stock level: 0
+ ID 105: Ford GT stock level: 0
+ ID 106: Lamborghini Aventador SVJ stock level: 0
+ ID 107: Noble M600 stock level: 0
+ ID 108: Aston Martin Vanquish stock level: 0
+ ID 109: BMW M1 stock level: 0
+ ID 110: McLaren F1 stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Student Name
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > quit
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+      by Student Name
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > add
+Adding a new product
+
+Please enter a product ID > 
+111
+Please enter the product name > 
+Your input is blank!
+
+Please enter the product name > Ferrari F40
+Item successfully added
+
+ Al's Stock List
+ ====================
+
+ ID 101: McLaren 720S stock level: 0
+ ID 102: Ferrari SF90 Stradale stock level: 0
+ ID 103: Ferrari F8 Tributo stock level: 0
+ ID 104: Lamborhini Huracan Evo stock level: 0
+ ID 105: Ford GT stock level: 0
+ ID 106: Lamborghini Aventador SVJ stock level: 0
+ ID 107: Noble M600 stock level: 0
+ ID 108: Aston Martin Vanquish stock level: 0
+ ID 109: BMW M1 stock level: 0
+ ID 110: McLaren F1 stock level: 0
+ ID 111: Ferrari F40 stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Student Name
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > add
+Adding a new product
+
+Please enter a product ID > 
+101
+Please enter the product name > 
+Your input is blank!
+
+Please enter the product name > McLaren 720S
+ERROR: Item already exists
+
+ Al's Stock List
+ ====================
+
+ ID 101: McLaren 720S stock level: 0
+ ID 102: Ferrari SF90 Stradale stock level: 0
+ ID 103: Ferrari F8 Tributo stock level: 0
+ ID 104: Lamborhini Huracan Evo stock level: 0
+ ID 105: Ford GT stock level: 0
+ ID 106: Lamborghini Aventador SVJ stock level: 0
+ ID 107: Noble M600 stock level: 0
+ ID 108: Aston Martin Vanquish stock level: 0
+ ID 109: BMW M1 stock level: 0
+ ID 110: McLaren F1 stock level: 0
+ ID 111: Ferrari F40 stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Student Name
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > remove
+Remove a product
+
+Please enter a product ID to remove > 
+111
+Please enter a product name to remove > 
+Your input is blank!
+
+Please enter a product name to remove > Ferrari F40
+Removed entry with ID:  ID 111: Ferrari F40 stock level: 0 from the stock list.
+
+ Al's Stock List
+ ====================
+
+ ID 101: McLaren 720S stock level: 0
+ ID 102: Ferrari SF90 Stradale stock level: 0
+ ID 103: Ferrari F8 Tributo stock level: 0
+ ID 104: Lamborhini Huracan Evo stock level: 0
+ ID 105: Ford GT stock level: 0
+ ID 106: Lamborghini Aventador SVJ stock level: 0
+ ID 107: Noble M600 stock level: 0
+ ID 108: Aston Martin Vanquish stock level: 0
+ ID 109: BMW M1 stock level: 0
+ ID 110: McLaren F1 stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Student Name
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > remove
+Remove a product
+
+Please enter a product ID to remove > 
+201
+Please enter a product name to remove > 
+Your input is blank!
+
+Please enter a product name to remove > BMW M3
+ERROR: Couldn't find item
+
+ Al's Stock List
+ ====================
+
+ ID 101: McLaren 720S stock level: 0
+ ID 102: Ferrari SF90 Stradale stock level: 0
+ ID 103: Ferrari F8 Tributo stock level: 0
+ ID 104: Lamborhini Huracan Evo stock level: 0
+ ID 105: Ford GT stock level: 0
+ ID 106: Lamborghini Aventador SVJ stock level: 0
+ ID 107: Noble M600 stock level: 0
+ ID 108: Aston Martin Vanquish stock level: 0
+ ID 109: BMW M1 stock level: 0
+ ID 110: McLaren F1 stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Student Name
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > quit
