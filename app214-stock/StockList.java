@@ -82,16 +82,16 @@ public class StockList
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
      */
-    public void sellProduct(int productID)
+    public void sellProduct(int productID, int amount)
     {
         Product product = findProduct(productID);
-        int soldQuantity = generator.nextInt(20);
+        
         if(product != null) 
         {
-            if(product.getQuantity() > 0 && product.getQuantity() >= soldQuantity)
+            if(product.getQuantity() > 0 && product.getQuantity() >= amount)
             {
-                product.decreaseQuantity(soldQuantity);
-                System.out.println("Sold " + soldQuantity + " of " + product);
+                product.decreaseQuantity(amount);
+                System.out.println("Sold " + amount + " of " + product);
                 // printout message
             }
             else
@@ -159,12 +159,26 @@ public class StockList
         System.out.println();
     }
     
-    //Constructor used to remove a product from the stock list
+    /**
+     * Constructor used to remove a product from the stock list
+     */
     public void removeProduct(int productID)
     {
         Product removed = findProduct(productID);
         
         stock.remove(removed);
         System.out.println("Removed entry with ID: " + (removed) + " from the stock list.");
+    }
+    
+    /**
+     * Constructor used to display which products are below a certain number of stock
+     */
+    public void lowStock(int amount)
+    {
+        for (Product product : stock)
+        {
+            if (product.getQuantity()<amount)
+                System.out.println(product);
+        }
     }
 }

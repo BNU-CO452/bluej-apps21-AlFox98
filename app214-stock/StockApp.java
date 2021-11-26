@@ -1,3 +1,4 @@
+
 /**
  * This app provides a user interface to the
  * stock manager so that users can add, edit,
@@ -60,6 +61,26 @@ public class StockApp
         {
             remove();
         }
+        else if(choice.equals("buy"))
+        {
+            buy();
+        }
+        else if(choice.equals("sell"))
+        {
+            sell();
+        }
+        else if(choice.equals("search"))
+        {
+            
+        }
+        else if(choice.equals("low stock"))
+        {
+            stockLow();
+        }
+        else if(choice.equals("restock"))
+        {
+            
+        }
         
         return false;
     }
@@ -73,6 +94,11 @@ public class StockApp
         System.out.println("    Add:        Add a new product");
         System.out.println("    Remove:     Remove an old product");
         System.out.println("    Print:      Print all products");
+        System.out.println("    Buy:        Buy stock");
+        System.out.println("    Sell:       Sell stock");
+        System.out.println("    Search:     Search stock");
+        System.out.println("    Low Stock:  Find items with low stock");
+        System.out.println("    Restock:    Find items that have been restocked");
         System.out.println("    Quit:       Quit the program");
         System.out.println();        
     }
@@ -88,6 +114,9 @@ public class StockApp
         System.out.println("********************************");
     }
     
+    /**
+     * Constructor used to add a new product if the product ID is unused
+     */
     private void addProduct()
     {
         System.out.println("Adding a new product");
@@ -112,6 +141,9 @@ public class StockApp
         stock.print();
     }
     
+    /**
+     * Constructor used to remove a product if the product ID entered can be found
+     */
     private void remove()
     {
         System.out.println("Remove a product");
@@ -133,4 +165,67 @@ public class StockApp
         }
         stock.print();
     }
+    
+    /**
+     * Constructor used to purchase an entered amount of any product, provided
+     * the product ID can be found
+     */
+    private void buy()
+    {
+        System.out.println("Purchase a product");
+        System.out.println();
+        
+        int id = reader.getInt("Please enter a product ID to purchase > ");
+        
+        int amount = reader.getInt("Please enter an amount to purchase > ");
+        
+        Product product = stock.findProduct(id);
+        
+        if(product != null) 
+        {
+            stock.buyProduct(id, amount);
+        }
+        else
+        {
+            System.out.println("ERROR: Couldn't find item");
+        }
+        stock.print();
+    }
+    
+    /**
+     * Constructor used to sell an entered amount of any product, provided
+     * the product ID can be found and there is stock to sell
+     */
+    private void sell()
+    {
+        System.out.println("Sell a product");
+        System.out.println();
+        
+        int id = reader.getInt("Please enter a product ID to sell > ");
+        
+        int amount = reader.getInt("Please enter an amount to sell > ");
+        
+        Product product = stock.findProduct(id);
+        
+        if(product != null) 
+        {
+            stock.sellProduct(id, amount);
+        }
+        else
+        {
+            System.out.println("ERROR: Couldn't find item");
+        }
+        stock.print();
+    }
+    
+    /**
+     * Calls the lowStock constructor in StockList with an entered amount, and
+     * finds products with stock less than the entered amount
+     */
+    private void stockLow()
+    {
+        int amount = reader.getInt("Please enter a stock amount > ");
+        stock.lowStock(amount);
+    }
 }
+    

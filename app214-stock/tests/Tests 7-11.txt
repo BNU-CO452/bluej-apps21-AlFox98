@@ -1,0 +1,129 @@
+ Program.main({ });
+********************************
+  App21-04: Stock Application 
+      by Student Name
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy:        Buy stock
+    Sell:       Sell stock
+    Search:     Search stock
+    Low Stock:  Find items with low stock
+    Restock:    Find items that have been restocked
+    Quit:       Quit the program
+
+Please enter your choice > buy
+Purchase a product
+
+Please enter a product ID to purchase > 
+101
+Please enter an amount to purchase > 
+4
+Bought 4  ID 101: McLaren 720S stock level: 4
+
+ Al's Stock List
+ ====================
+
+ ID 101: McLaren 720S stock level: 4
+ ID 102: Ferrari SF90 Stradale stock level: 0
+ ID 103: Ferrari F8 Tributo stock level: 0
+ ID 104: Lamborhini Huracan Evo stock level: 0
+ ID 105: Ford GT stock level: 0
+ ID 106: Lamborghini Aventador SVJ stock level: 0
+ ID 107: Noble M600 stock level: 0
+ ID 108: Aston Martin Vanquish stock level: 0
+ ID 109: BMW M1 stock level: 0
+ ID 110: McLaren F1 stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Student Name
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy:        Buy stock
+    Sell:       Sell stock
+    Search:     Search stock
+    Low Stock:  Find items with low stock
+    Restock:    Find items that have been restocked
+    Quit:       Quit the program
+
+Please enter your choice > 
+Your input is blank!
+
+Please enter your choice > sell
+Sell a product
+
+Please enter a product ID to sell > 
+101
+Please enter an amount to sell > 
+2
+Sold 2 of  ID 101: McLaren 720S stock level: 2
+
+ Al's Stock List
+ ====================
+
+ ID 101: McLaren 720S stock level: 2
+ ID 102: Ferrari SF90 Stradale stock level: 0
+ ID 103: Ferrari F8 Tributo stock level: 0
+ ID 104: Lamborhini Huracan Evo stock level: 0
+ ID 105: Ford GT stock level: 0
+ ID 106: Lamborghini Aventador SVJ stock level: 0
+ ID 107: Noble M600 stock level: 0
+ ID 108: Aston Martin Vanquish stock level: 0
+ ID 109: BMW M1 stock level: 0
+ ID 110: McLaren F1 stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Student Name
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy:        Buy stock
+    Sell:       Sell stock
+    Search:     Search stock
+    Low Stock:  Find items with low stock
+    Restock:    Find items that have been restocked
+    Quit:       Quit the program
+
+Please enter your choice > 
+Your input is blank!
+
+Please enter your choice > low stock
+Please enter a stock amount > 
+1
+ ID 102: Ferrari SF90 Stradale stock level: 0
+ ID 103: Ferrari F8 Tributo stock level: 0
+ ID 104: Lamborhini Huracan Evo stock level: 0
+ ID 105: Ford GT stock level: 0
+ ID 106: Lamborghini Aventador SVJ stock level: 0
+ ID 107: Noble M600 stock level: 0
+ ID 108: Aston Martin Vanquish stock level: 0
+ ID 109: BMW M1 stock level: 0
+ ID 110: McLaren F1 stock level: 0
+********************************
+  App21-04: Stock Application 
+      by Student Name
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy:        Buy stock
+    Sell:       Sell stock
+    Search:     Search stock
+    Low Stock:  Find items with low stock
+    Restock:    Find items that have been restocked
+    Quit:       Quit the program
+
+Please enter your choice > 
+Your input is blank!
+
+Please enter your choice > 
